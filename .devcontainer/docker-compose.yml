@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  exilir:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
+    volumes:
+      - ..:/workspaces/elixir
+    # This is where ports would go
+    networks:
+      - elixir-network
+  # Additional services here
+# volumes here
+networks:
+  elixir-network:
+    driver: bridge
+    

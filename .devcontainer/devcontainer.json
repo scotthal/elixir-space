@@ -1,7 +1,7 @@
 {
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "elixir",
+  "workspaceFolder": "/workspaces/elixir",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -13,4 +13,5 @@
       ]
     }
   }
+  // forwardPorts here
 }
